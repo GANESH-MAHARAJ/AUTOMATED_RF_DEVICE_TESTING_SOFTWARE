@@ -1,0 +1,24 @@
+DEVICE INFO :->
+
+WAFER : CN-42
+Device : LN42
+Device Location : X=5,Y=4
+
+Params INFO :->
+
+RF frequency : Variable
+RF Power Start : -15 dbm
+step : 1
+End : +20 dbm
+Duration(s) : 0.5
+
+Vdrain Channel : CH4
+Vgate Channel : CH2
+
+Input Loss(dB) : 1
+Input Gain(dB) : 0
+Output Loss(dB) : 41
+
+Vdrain(V) : 15
+Vgate(V) : 4
+

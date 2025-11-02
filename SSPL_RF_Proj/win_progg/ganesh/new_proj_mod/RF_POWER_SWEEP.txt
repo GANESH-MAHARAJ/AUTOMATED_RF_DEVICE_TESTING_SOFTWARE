@@ -1,0 +1,41 @@
+
+    def connect_ngp800(self):
+        self.log("Scanning for NGP800...")
+        self.ngp800_status.setText("NGP800: Scanning...")
+        QApplication.processEvents()
+        try:
+            rm = pyvisa.ResourceManager()
+            resources = rm.list_resources()
+            self.log(f"Resources found: {resources}")
+            for res in resources:
+                if "USB" in res or "ASRL" in res:
+                    # if "ASRL3" in res:
+                    #     self.log("[SKIPPED {res} (COM3) is known to be blocked]")
+                    #     continue
+                    try:
+                        self.log(f"Trying: {res}")
+                        instr = rm.open_resource(res)
+                        if res.startswith("ASRL"):
+                            instr.baud_rate = 115200
+                            instr.data_bits = 8
+                            instr.stop_bits = StopBits.one
+                            instr.parity = Parity.none
+                            instr.timeout = 2000
+                            instr.write_termination = '\n'
+                            instr.read_termination = '\n'
+                        instr.timeout = 2000
+                        idn = instr.query("*IDN?").strip()
+                        self.log(f"IDN for {res}: {idn}")
+                        if "NGP800" in idn or "ROHDE" in idn.upper():
+                            self.ngp800_instr = instr
+                            self.ngp800_status.setText(f"Connected to: {idn}")
+                            self.ngp800_button.setEnabled(False)
+                            self.check_all_connected()
+                            return
+                        instr.close()
+                    except Exception as e:
+                        self.log(f"Error connecting to {res}: {e}")
+            self.ngp800_status.setText("NGP800 not found.")
+        except Exception as e:
+            self.log(f"NGP800 VISA error: {e}")
+            self.ngp800_status.setText(f"Error: {e}")

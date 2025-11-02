@@ -1,0 +1,1 @@
+is it possible to set parameters of pulse width,pulse delay,pulse period for exg signal generator and then read values of pulse analysis like max power and etc details and records htem in the records of this project

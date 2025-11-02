@@ -1,0 +1,6 @@
+wafer No. : AX450
+T63-8SV
+S62M 
+vd : start=1,step=0.01,end=10
+vg : start=6,step=-1,end=0
+max Limits: vd=10,vg=10,Id=1

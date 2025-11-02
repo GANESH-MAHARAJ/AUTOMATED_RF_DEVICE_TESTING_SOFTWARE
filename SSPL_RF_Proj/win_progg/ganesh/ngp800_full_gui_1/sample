@@ -1,0 +1,19 @@
+[2025-05-22 16:40:24] Searching for NGP800...
+[2025-05-22 16:40:26] Available VISA resources: ('ASRL/dev/ttyS0::INSTR', 'ASRL/dev/ttyACM0::INSTR')
+[2025-05-22 16:40:28] Could not open resource ASRL/dev/ttyS0::INSTR: VI_ERROR_TMO (-1073807339): Timeout expired before operation completed.
+[2025-05-22 16:42:33] Profile saved to /home/sanjay/ganesh/lel.json
+[2025-05-22 16:42:54] Profile loaded from /home/sanjay/ganesh/lol.json
+[2025-05-22 16:42:59] Set limits for channel 1: 25.0 V, 8000.0 mA (200.00 W)
+[2025-05-22 16:42:59] Set limits for channel 2: 25.0 V, 8000.0 mA (200.00 W)
+[2025-05-22 16:42:59] Set limits for channel 3: 25.0 V, 8000.0 mA (200.00 W)
+[2025-05-22 16:42:59] Set limits for channel 4: 25.0 V, 8000.0 mA (200.00 W)
+[2025-05-22 16:44:03] Current set to 2000.0 mA on channel 1
+[2025-05-22 16:44:43] Voltage set to 20.0 V on channel 1
+[2025-05-22 16:44:54] Voltage out of range for channel 1. Skipping.
+[2025-05-22 16:46:40] Voltage set to 10.0 V on channel 1
+[2025-05-22 16:46:40] Voltage set to 10.0 V on channel 2
+[2025-05-22 16:46:40] Voltage set to 10.0 V on channel 3
+[2025-05-22 16:47:05] Voltage set to 25.0 V on channel 1
+[2025-05-22 16:47:05] Voltage set to 25.0 V on channel 2
+[2025-05-22 16:47:05] Voltage set to 25.0 V on channel 3
+[2025-05-22 16:48:39] EMERGENCY STOP: All channels turned OFF.

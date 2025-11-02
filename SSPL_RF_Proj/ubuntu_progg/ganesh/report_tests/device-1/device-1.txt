@@ -1,0 +1,3 @@
+wafer: CN 42
+location: x=5 y=3
+device : LN4

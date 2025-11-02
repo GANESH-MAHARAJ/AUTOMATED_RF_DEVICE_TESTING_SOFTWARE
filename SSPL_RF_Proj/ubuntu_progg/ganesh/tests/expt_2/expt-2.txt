@@ -1,0 +1,6 @@
+S42M
+27C
+AX450
+vd : start=1,step=0.01,end=10
+vg : start=6,step=-1,end=0
+max Limits: vd=10,vg=10,Id=1

@@ -1,0 +1,6 @@
+wafer No. : CN-42
+
+Location : x=5,y=4
+
+Device no.:LN6
+
