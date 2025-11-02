@@ -76,7 +76,7 @@ Its modular design allows easy extension for additional instruments or future wa
 ## 🧑‍💻 Developed By
 
 **Ganesh Maharaj Kamatham**  
-Research Intern – DRDO SSPL, New Delhi  
-(Department of Electronics and Communication, VIT Vellore)
+Research Intern – DRDO SSPL (MAY-JULY 2025), New Delhi  
+(Computer Science Engineering (Data Science), VIT Vellore)
 
 ---
